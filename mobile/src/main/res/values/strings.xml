@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">onemage</string>
+    <string name="app_name">1mage</string>
+    <string name="upload_label">Upload</string>
+    <string name="browse_label">Browse</string>
+    <string name="title_activity_browse">BrowseActivity</string>
     <string name="hello_world">Hello world!</string>
+    <string name="load_error">Error loading content</string>
     <string name="action_settings">Settings</string>
+    <string name="try_again">Retry</string>
+    <string name="next_button">Next</string>
+    <string name="last_button">Last</string>
 
 </resources>

@@ -5,7 +5,6 @@ import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 
 import org.apache.http.HttpResponse;
-import org.apache.http.HttpStatus;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
@@ -108,7 +107,7 @@ public class Gallery {
                 URL url = new URL(urlStr);
                 HttpURLConnection conn = (HttpURLConnection)url.openConnection();
                 conn.setInstanceFollowRedirects(false);
-                String redirect = new URL(conn.getHeaderField("Location")).toString();
+                String redirect = conn.getHeaderField("Location");
 
                 // Get the image ID from the redirect URL.
                 int idx = redirect.lastIndexOf("/");
